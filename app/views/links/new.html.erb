@@ -1,0 +1,17 @@
+<center>
+<h2>create a new link.</h2>
+	<%= form_for @links do |form| %>
+	  <%= form.label :title %>
+	  <br>
+	  <%= form.text_field :title %>
+	  <br>
+	  <%= form.label :post%>
+	  <br>
+	  <%= form.text_area :post%>
+	  <br>
+
+
+	  <%= form.submit %>
+	<% end %>
+
+</center>

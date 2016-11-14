@@ -1,0 +1,7 @@
+<h1>index page for links#root_path</h1>
+<%= link_to 'submit a new link', new_link_path %>
+<% @links.each do |link|%>
+	<h1><%= link_to link.title, link%></h1>
+	<br>
+	<h> Submitted</h> <%= time_ago_in_words(link.created_at)%>
+	<%end%>
